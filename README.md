@@ -40,20 +40,20 @@ Most of the Python packages can be installed by "pip install package-name". A fe
 https://gist.github.com/persiyanov/1d5499fd10802fa309d803359039a93b  
 https://xgboost.readthedocs.io/en/latest/build.html#python-package-installation  
 
-Briefly:  
+  Briefly:  
+  \---------------------------------------------------------------  
+  sudo apt-get install git make g++ python-setuptools  
+  git clone --recursive https://github.com/dmlc/xgboost  
+  cd xgboost  
+  make -j4  
+  cd python-package  
+  sudo python setup.py install  
 
-sudo apt-get install git make g++ python-setuptools  
-git clone --recursive https://github.com/dmlc/xgboost  
-cd xgboost  
-make -j4  
-cd python-package  
-sudo python setup.py install  
+  Last command can raise exception ImportError: No module named numpy.distutils.core. Whatever, XGBoost is correctly installed. Only thing we need is to add the package to PYTHONPATH:  
 
-Last command can raise exception ImportError: No module named numpy.distutils.core. Whatever, XGBoost is correctly installed. Only thing we need is to add the package to PYTHONPATH:  
-
-echo "export PYTHONPATH=~/xgboost/python-package" > ~/.bash_profile  
-source ~/.bash_profile  
-
+  echo "export PYTHONPATH=~/xgboost/python-package" > ~/.bash_profile  
+  source ~/.bash_profile  
+  \---------------------------------------------------------------  
 
 * Install tensorflow-gpu:   
 To use tensorflow-gpu as the backend of the Keras, install Keras first and then "pip install tensorflow-gpu".  
