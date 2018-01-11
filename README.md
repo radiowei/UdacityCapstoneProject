@@ -41,7 +41,7 @@ https://gist.github.com/persiyanov/1d5499fd10802fa309d803359039a93b
 https://xgboost.readthedocs.io/en/latest/build.html#python-package-installation  
 
   Briefly:  
-  \---------------------------------------------------------------  
+  \------------------------------------------------------------------------------------------------------------------------  
   sudo apt-get install git make g++ python-setuptools  
   git clone --recursive https://github.com/dmlc/xgboost  
   cd xgboost  
@@ -53,7 +53,7 @@ https://xgboost.readthedocs.io/en/latest/build.html#python-package-installation
 
   echo "export PYTHONPATH=~/xgboost/python-package" > ~/.bash_profile  
   source ~/.bash_profile  
-  \---------------------------------------------------------------  
+  \------------------------------------------------------------------------------------------------------------------------  
 
 * Install tensorflow-gpu:   
 To use tensorflow-gpu as the backend of the Keras, install Keras first and then "pip install tensorflow-gpu".  
