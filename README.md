@@ -11,6 +11,15 @@ https://www.kaggle.com/benhamner/sf-bay-area-bike-share/downloads/sf-bay-area-bi
 
 The size of original data is 660MB when downloaded and about 5GB when unzipped.
 
+All the codes are in the Jupyter notebook named "CapstoneProject_BikeSharing.ipynb".  
+An html report is generated for the notebook, named "report.html".
+
+The project proposal file is named "Proposal.pdf".   
+The project report is named "CapstoneProjectReport.pdf".  
+
+All other files are necessary for the notebook to run except those in the two folders: "Latex" and "Latex_Project".
+
+
 ### Prerequisites
 
 Hardware: GPU is required to run some of the codes.  
